@@ -7,7 +7,7 @@
                 <p class="slogan2">Discover the best food in Mumbai.</p>
             </div>
             <!-- <form> -->
-              <!-- <select class="select" id="select">
+              <select class="select" id="select">
                 <option>select your location</option>
                 <option>Chandigarh</option>
                 <option>Himachal Pradesh</option>
@@ -37,25 +37,15 @@
                 <option>Coimbatore</option>
                 <option>madurai</option>
                 <option>Srinagar</option>
-            </select> -->
+                <option>Haryana</option>
+                <option>karnal</option>
+            </select>
             <input type="text" class="searchBar select" placeholder="Search for restaurant" [(ngModel)]="searchText" (input)="search()">
             <button id="btn" (click)="clear()">clear</button>
             <!-- </form> -->
         </div>
 
         
-          <!-- <div class="flex1" *ngIf="allRestaurant != 0">
-            <div class="card-container1" *ngFor="let restaurant of allRestaurant">
-              <div class="card1">
-                <img class="img1" src="http://localhost:8082/restaurant-service/images/{{restaurant.resImage}}" alt="#">
-                <div class="pad1">
-                  <h2>{{restaurant.restaurantName}}</h2>
-                  <h3>Location : {{restaurant.location}}</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus necessitatibus laborum quia animi iste nostrum.</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
         <div>
 
           <div class="marquee mt">

@@ -10,7 +10,7 @@ public class ApiGateWayApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ApiGateWayApplication.class, args);
-        System.out.println("api");
+        System.out.println("=================Api-Gateway Is Running on Port no: 9000============================");
     }
 
 

@@ -10,7 +10,7 @@ public class MailNotificationServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MailNotificationServiceApplication.class, args);
-        System.out.println("mail");
+        System.out.println("==================Yes Mail is Coming!!!=================================");
     }
 
 }

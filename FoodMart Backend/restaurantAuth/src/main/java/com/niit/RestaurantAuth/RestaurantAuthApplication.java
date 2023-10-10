@@ -12,7 +12,7 @@ public class RestaurantAuthApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(RestaurantAuthApplication.class, args);
-        System.out.println("res Auth");
+        System.out.println("================Restaurant-Auth is working!!!==========================");
     }
 
 }

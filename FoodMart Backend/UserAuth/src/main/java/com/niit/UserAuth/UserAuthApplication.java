@@ -19,7 +19,7 @@ public class UserAuthApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserAuthApplication.class, args);
-		System.out.println("=============user-Auth===============");
+		System.out.println("=============User-Auth is Running!!!===============");
 	}
 
 //	@Bean

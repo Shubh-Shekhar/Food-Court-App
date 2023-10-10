@@ -9,10 +9,10 @@ import { AppModule } from '../app.module';
 export class UserAuthService {
 
   isLoggedIn:boolean = false;
- 
+
   constructor(private httpclient:HttpClient) { }
 
-  userAuthBaseUrl = "http://localhost:8080/app/v1";
+  userAuthBaseUrl = "http://localhost:9000/app/v1";
 
   userRegistration(userSignUp:UserSignUp)
   {

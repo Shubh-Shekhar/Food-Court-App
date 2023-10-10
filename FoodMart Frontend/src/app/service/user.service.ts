@@ -8,7 +8,7 @@ export class UserService {
 
   constructor(private httpclient:HttpClient) { }
 
-  userServcieUrl = "http://localhost:9999/foodieApp/userService/";
+  userServcieUrl = "http://localhost:9000/foodieApp/userService/";
 
   // orderUrl
 
@@ -25,7 +25,7 @@ export class UserService {
       'Authorization' : 'Bearer ' +localStorage.getItem("User_Token")
     })
     let requestOption = {headers : httpHeaders}
-    return this.httpclient.get(this.userServcieUrl+"getUserCartAllDishes",requestOption) 
+    return this.httpclient.get(this.userServcieUrl+"getUserCartAllDishes",requestOption)
   }
 
   addDishesToUserFavorite(Dish :any){
@@ -48,7 +48,7 @@ export class UserService {
       'Authorization' : 'Bearer ' +localStorage.getItem("User_Token")
     })
     let requestOption = {headers : httpHeaders}
-    return this.httpclient.get(this.userServcieUrl+"getUserFavouriteAllDishes",requestOption) 
+    return this.httpclient.get(this.userServcieUrl+"getUserFavouriteAllDishes",requestOption)
   }
 
   getAllResturantFromFavourite(){
@@ -56,7 +56,7 @@ export class UserService {
       'Authorization' : 'Bearer ' +localStorage.getItem("User_Token")
     })
     let requestOption = {headers : httpHeaders}
-    return this.httpclient.get(this.userServcieUrl+"getUserFavouriteAllRestaurants",requestOption) 
+    return this.httpclient.get(this.userServcieUrl+"getUserFavouriteAllRestaurants",requestOption)
   }
 
   deleteDishFromCart(dish:any){
@@ -64,7 +64,7 @@ export class UserService {
       'Authorization' : 'Bearer ' +localStorage.getItem("User_Token")
     })
     let requestOption = {headers : httpHeaders}
-    return this.httpclient.post(this.userServcieUrl+"deleteDishesFromUserCart",dish,requestOption) 
+    return this.httpclient.post(this.userServcieUrl+"deleteDishesFromUserCart",dish,requestOption)
   }
 
   deleteAllDishFromCart(dish:any){
@@ -72,7 +72,7 @@ export class UserService {
       'Authorization' : 'Bearer ' +localStorage.getItem("User_Token")
     })
     let requestOption = {headers : httpHeaders}
-    return this.httpclient.post(this.userServcieUrl+"deleteAllDishesFromUserCart",dish,requestOption) 
+    return this.httpclient.post(this.userServcieUrl+"deleteAllDishesFromUserCart",dish,requestOption)
   }
 
   deleteDishFromFavourite(dish:any){
@@ -80,17 +80,17 @@ export class UserService {
       'Authorization' : 'Bearer ' +localStorage.getItem("User_Token")
     })
     let requestOption = {headers : httpHeaders}
-    return this.httpclient.post(this.userServcieUrl+"deleteDishesFromUserFavourite",dish,requestOption) 
+    return this.httpclient.post(this.userServcieUrl+"deleteDishesFromUserFavourite",dish,requestOption)
   }
 
-  
+
 
   deleteRestaurantFromFavourite(restaurant:any){
     let httpHeaders = new HttpHeaders({
       'Authorization' : 'Bearer ' +localStorage.getItem("User_Token")
     })
     let requestOption = {headers : httpHeaders}
-    return this.httpclient.post(this.userServcieUrl+"deleteRestaurantFromUserFavourite",restaurant,requestOption) 
+    return this.httpclient.post(this.userServcieUrl+"deleteRestaurantFromUserFavourite",restaurant,requestOption)
   }
 
   getUser(){
@@ -98,7 +98,7 @@ export class UserService {
       'Authorization' : 'Bearer ' +localStorage.getItem("User_Token")
     })
     let requestOption = {headers : httpHeaders}
-    return this.httpclient.get(this.userServcieUrl+"getUserDetails",requestOption) 
+    return this.httpclient.get(this.userServcieUrl+"getUserDetails",requestOption)
   }
 
   updateQuantity(dish:any){

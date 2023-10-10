@@ -1,0 +1,60 @@
+<body>
+    
+    <a routerLink="/home">
+        <div class="head">
+          <img src="../../../assets/images/fork.png" alt="#" style="height: 100px; width: 100px; margin-left: 600px;"><h1>Foodie</h1>
+        </div>
+    </a>
+
+    <div class="main">
+        <div class="sideImg">
+            <img class="img1" src="https://images.unsplash.com/photo-1654922207993-2952fec328ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlZnxlbnwwfHwwfHw%3D&w=1000&q=80" alt="">
+        </div>
+        <div>
+            <form id="form" [formGroup]="signupForm" (ngSubmit)="sendData()">
+                <img src="../../../assets/images/fork.png" alt="#">
+                <h1>Register with Foodie</h1>
+                <div>
+                    <mat-form-field class="input"  >
+                        <input type="email" placeholder="Email Address" matInput formControlName="emailId">
+                        <mat-error *ngIf="emailId?.errors?.['required']" style="color: red;">
+                            Email is required.
+                        </mat-error>
+                        <mat-error *ngIf="emailId?.errors?.['pattern']" style="color: red;">
+                           Enter Valid Email.
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            
+                <div>
+                    <mat-form-field class="input" >
+                        <input type="text" placeholder="Restaurant Owner Name" matInput formControlName="ownerName">
+                        <mat-error *ngIf="ownerName?.errors?.['required']" style="color: red;">
+                            Owner Name is required.
+                        </mat-error>
+                        <mat-error *ngIf="ownerName?.errors?.['minlength']" style="color: red;">
+                            Owner Name should have atleast 3 character.
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            
+                <div>
+                    <mat-form-field class="input" >
+                        <input type="password" placeholder="Password" matInput formControlName="password">
+                        <mat-error *ngIf="password?.errors?.['required']" style="color: red;">
+                            Password is required.
+                        </mat-error>
+                        <mat-error *ngIf="password?.errors?.['minlength']" style="color: red;">
+                            Password should have min 8 letter password
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+        
+                <button mat-raised-button color="accent">Register</button> 
+                <h4>if already registered ? <a routerLink="../restaurantLogin" href="">click here</a> </h4>
+            </form>
+        </div>
+    </div><br><br>
+
+    <app-footer></app-footer>
+</body>

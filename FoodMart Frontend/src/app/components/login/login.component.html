@@ -1,0 +1,46 @@
+<!-- <app-header></app-header> -->
+<a routerLink="/home">
+    <div class="head">
+      <img src="../../../assets/images/fork.png" alt="#" style="height: 100px; width: 100px; margin-left: 600px;"><h1>Foodie</h1>
+    </div>
+</a>
+
+
+<div class="bg">
+    <div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Welcome!</h2>
+                    <p>Create your account.<br>For Free!</p> <a routerLink="../register" class="btn">Sign Up</a>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Login</h2>
+                    <form [formGroup]="loginForm">
+                        <p> <label>Username/Email address<span>*</span></label>
+                             <input type="text" placeholder="Username or Email" formControlName="email">
+                        </p>
+                        <mat-error *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid"
+                             style="color:red;font-size: small;">Please enter Valid Email id</mat-error>
+                        <p> 
+                            <label>Password<span>*</span></label> 
+                            <input type="password" placeholder="Password" formControlName="password">
+                         </p>
+                            <mat-error *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid"
+                            style="color:red;font-size: small;">Please enter Valid Password</mat-error>
+                        <p>
+                            <input type="button" value="Sign In" (click)="userLogIn()"> 
+                        </p>
+                        <!-- <p>
+                             <a href="">Forgot password?</a> 
+                        </p> -->
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

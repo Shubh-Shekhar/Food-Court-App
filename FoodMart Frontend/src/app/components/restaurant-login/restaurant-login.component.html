@@ -1,0 +1,43 @@
+<a routerLink="/home">
+  <div class="head">
+    <img src="../../../assets/images/fork.png" alt="#" style="height: 100px; width: 100px; margin-left: 600px;"><h1>Foodie</h1>
+  </div>
+</a>
+<form [formGroup]="loginForm" (ngSubmit)="sendLoginData()">
+    <div class="main">
+      <div class="login">
+        <h1>Restaurant Owner Login</h1>
+        <div>
+          <mat-form-field class="input">
+              <input matInput type="email" placeholder="Enter your Email Address" formControlName="emailId">
+              <mat-error *ngIf="emailId?.errors?.['required']" style="color: orange;">
+                Email is required.
+            </mat-error>
+            <mat-error *ngIf="emailId?.errors?.['pattern']" style="color: orange;">
+               Enter Valid Email.
+            </mat-error>
+          </mat-form-field>
+          <br>
+        </div>
+        <div>
+          <mat-form-field class="input">
+            <input matInput type="password" placeholder="Enter your password" formControlName="password">
+            <mat-error *ngIf="password?.errors?.['required']" style="color: orange;">
+              Password is required.
+          </mat-error>
+          <mat-error *ngIf="password?.errors?.['minlength']" style="color: orange;">
+              Password should have min 8 letter password
+          </mat-error>
+        </mat-form-field>
+        <br> <br>
+        </div>
+        <button mat-raised-button color="accent">Login</button>
+        <p>Don't have an account? <a routerLink="/restaurantRegister" >Register here</a></p> 
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1593819559713-743d364eb059?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                  alt="Login image"  style="height: 625px; width: 720px;">
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </form>

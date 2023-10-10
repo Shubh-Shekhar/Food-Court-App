@@ -1,0 +1,152 @@
+
+
+<body class="image">
+
+    <a routerLink="/home">
+        <div class="head">
+          <img src="../../../assets/images/fork.png" alt="#" style="height: 100px; width: 100px; margin-left: 600px;"><h1>Foodie</h1>
+        </div>
+    </a>
+
+
+    <form  class="form"  [formGroup]="signupForm">
+        <div class="container">
+        <h3>New Registration</h3>
+
+    
+           
+<div style="display: flex;justify-content: space-evenly; width: 100%;">
+                        <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;" >
+                            <input matInput type="text" minlength="3" placeholder="First Name" id="firstName" formControlName="firstName">
+                        <mat-error *ngIf="firstName?.errors?.['required']" style="color: red;">
+                            First Name is required.
+                        </mat-error>
+                        <mat-error *ngIf="firstName?.errors?.['minlength']" style="color: red;">
+                            First Name should have atleast 3 character
+                        </mat-error>
+                    </mat-form-field>
+                    
+                    <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;" >
+                        <input matInput type="text" placeholder="Last Name" id="lastName"
+                            formControlName="lastName">
+                            <mat-error *ngIf="lastName?.errors?.['required']" style="color: red;">
+                                Last Name is required.
+                            </mat-error>
+                            <mat-error *ngIf="firstName?.errors?.['minlength']" style="color: red;">
+                                Last Name should have atleast 3 character
+                            </mat-error>
+                    </mat-form-field>
+                </div>
+    
+
+        <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;" >
+            <input matInput placeholder="abc@gmail.com"  type="email" id="email" formControlName="email" />
+            <mat-error *ngIf="email?.errors?.['required']" style="color: red;">
+                Email is required.
+            </mat-error>
+            <mat-error *ngIf="email?.errors?.['pattern']" style="color: red;">
+               Enter Valid Email.
+            </mat-error>
+        </mat-form-field>
+       
+
+     <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;" >
+        <input matInput type="password" placeholder="Example@123" id="password" formControlName="password">
+    <mat-error *ngIf="password?.errors?.['required']" style="color: red;">
+        Password is required.
+    </mat-error>
+    <mat-error *ngIf="password?.errors?.['pattern']" style="color: red; width: 700px;">
+        Password should have min 8 letter password.
+    </mat-error>
+
+</mat-form-field>
+          
+         <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;" >
+            <input matInput type="tel" placeholder="Phone Number" id="mobileNo" formControlName="mobileNo">
+            <mat-error *ngIf="mobileNo?.errors?.['pattern']" style="color: red;">
+                Valid phone number contains 10 digits starting with 7/8/9
+            </mat-error>
+        </mat-form-field>
+           <h1>Address</h1>
+            <div style="display: flex;justify-content: space-evenly; width: 100%;">
+               
+                <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;" >
+                    <input matInput type="text" placeholder="Building/House Name" id="buildingName"
+                        formControlName="buildingName">
+                        <mat-error *ngIf="buildingName?.errors?.['required']" style="color: red; font-size: 13px;">
+                            Building/House Name is required.
+                        </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%; " >
+                    <input matInput type="number" placeholder="Flat/House No." id="city"
+                        formControlName="flatNo">
+                        <mat-error *ngIf="flatNo?.errors?.['required']" style="color: red; font-size: 13px;">
+                            flatNo/House  is required.
+                        </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;" >
+                    <input matInput type="text" placeholder="Street Name" id="streetName"
+                        formControlName="streetName">
+                        <mat-error *ngIf="streetName?.errors?.['required']" style="color: red;">
+                            street Name is required.
+                        </mat-error>
+                </mat-form-field>
+                </div>
+          
+            <div style="display: flex;justify-content: space-evenly; width: 100%;">
+               
+            <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;" >
+                <input matInput type="text" placeholder="City" id="city"
+                    formControlName="city">
+                    <mat-error *ngIf="city?.errors?.['required']" style="color: red;">
+                        City Name is required.
+                    </mat-error>
+            </mat-form-field>
+           <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;">  
+                <mat-label>state</mat-label>  
+                <select matNativeControl required>  
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option> 
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option> 
+                    <option value="Kashmir">Kashmir</option>
+                    <option value="Sikkhim">Sikkhim</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Uttaranchal">Uttaranchal</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                </select>  
+              </mat-form-field>  
+            <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;" >
+                <input matInput type="number" placeholder="Pincode" id="pincode" 
+                    formControlName="pincode">
+                    <mat-error *ngIf="pincode?.errors?.['required']" style="color: red;">
+                        Pincode is required.
+                    </mat-error>
+                    <!-- <mat-error *ngIf="pincode?.errors?.['minlength']" style="color: red;">
+                        Pincode should have atleast 6 no
+                    </mat-error> -->
+            </mat-form-field>
+      
+    </div>
+    <input style=" margin-top: 5px;" type="file"  (change)="onImageUpload($event)">  
+    
+        <button (click)="sendSignupData()">Register</button>
+      </div>
+    </form>
+
+    
+</body>
+<app-footer></app-footer>
+
+ 

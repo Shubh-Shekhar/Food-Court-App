@@ -10,7 +10,7 @@ export class RestaurantService {
 
   constructor(private httpClient:HttpClient) { }
 
-  restaurantServiceUrl = "http://localhost:9000/restaurant-service";
+  restaurantServiceUrl = 'http://localhost:8082/restaurant-service';
 
   getRestaurant(){
     let httpHeaders =  new HttpHeaders({

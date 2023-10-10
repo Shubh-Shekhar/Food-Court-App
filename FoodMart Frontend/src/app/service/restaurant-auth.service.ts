@@ -12,7 +12,7 @@ export class RestaurantAuthService {
 
   constructor(private httpClient:HttpClient) { }
 
-  resAuthUrl = "http://localhost:9000/owner-auth";
+  resAuthUrl = 'http://localhost:8081/owner-auth';
 
   restaurantOwnerRegistration(restaurantSignUp:RestaurantSignUp)
   {

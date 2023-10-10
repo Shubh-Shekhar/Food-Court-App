@@ -22,11 +22,6 @@ public class UserAuthApplication {
 		System.out.println("=============User-Auth is Running!!!===============");
 	}
 
-//	@Bean
-//	public JavaMailSender JavaMailSender(){
-//		return new JavaMailSender();
-//	}
-
 	@Bean
 	public FilterRegistrationBean<?> filterRegistrationBean() {
 		final CorsConfiguration config = new CorsConfiguration();

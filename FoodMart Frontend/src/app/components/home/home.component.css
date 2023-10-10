@@ -8,20 +8,30 @@
     height: 95%;
     position: absolute;
   }
-  .slogan1{
-    margin-left: 41%;
-    margin-top: 180px;
-    margin-bottom: -20px;
-    color: white;
-    font-size: 80px;
-    font-weight: 1000;
-  }
-  .slogan2{
-    margin-left: 30%;
-    font-size: 40px;
-    font-weight: 500;
-    color: white;
-  }
+.slogan1{
+  margin-left: 40%;
+  font-size: 40px;
+  margin-top: 130px;
+  font-weight:700;
+  background-image: linear-gradient(45deg,greenyellow,navajowhite,darkseagreen,green,mediumvioletred);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.slogan2{
+  margin-left: 40%;
+  font-size: 40px;
+  margin-top: 130px;
+  font-weight:700;
+  background-image: linear-gradient(45deg,yellow,pink,blue,green,salmon);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
   .select{
     /* margin-top: 10px; */
     margin-top: -10px;
@@ -53,9 +63,9 @@
     padding: 1rem 0px;
     /* transform: rotate(-1deg); */
     transform: translateY(-4rem) rotate(-1deg);
-  
+
   }
-  
+
   .marquee__content {
     padding: 1rem 0px;
     display: inline-block;
@@ -79,10 +89,10 @@
     font-size: 15px;
     height: 100%;
     width: 500%;
-  
+
   }
-  
-  
+
+
   @keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
@@ -149,4 +159,3 @@ img{
 
 
   /*  */
-  

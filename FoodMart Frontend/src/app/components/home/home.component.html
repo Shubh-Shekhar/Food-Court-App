@@ -37,6 +37,7 @@
       <option>Coimbatore</option>
       <option>madurai</option>
       <option>Srinagar</option>
+      <option>karnal</option>
     </select>
     <input (input)="search()" [(ngModel)]="searchText" class="searchBar select" placeholder="Search for restaurant"
            type="text">
@@ -86,8 +87,8 @@
             <div class="pad">
               <h2>{{restaurant.restaurantName}}</h2>
               <h3>Location : {{restaurant.location}}</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus necessitatibus laborum quia
-                animi iste nostrum.</p>
+              <p>{{restaurant.restaurantName}} it is the best restaurant in {{restaurant.location}}, which serve's best food item. <br>
+                Enjoy the flavou's of nature. Continue your diet and healthy and tasty meal in {{restaurant.restaurantName}}. </p>
             </div>
           </div>
         </div>

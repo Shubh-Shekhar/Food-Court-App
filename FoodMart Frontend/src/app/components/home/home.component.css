@@ -23,7 +23,7 @@
 .slogan2{
   margin-left: 32%;
   font-size: 40px;
-  margin-top: 130px;
+  margin-top: 50px;
   font-weight:700;
   background-image: linear-gradient(45deg,yellow,pink,blue,green,navajowhite,deepskyblue);
   background-size: cover;
@@ -37,12 +37,14 @@
     margin-top: -10px;
     margin-left: 32%;
     padding: 15px;
+    background-color: wheat;
   }
-  .btn{
+  #btn{
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 3px;
-
+    background-color: red;
+    color: whitesmoke;
     /* padding-top: 12px; */
   }
   #select{

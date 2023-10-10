@@ -12,15 +12,15 @@ export class UserAuthService {
 
   constructor(private httpclient:HttpClient) { }
 
-  userAuthBaseUrl = "http://localhost:8080/app/v1";
+  userAuthBaseUrl = 'http://localhost:9000/app/v1';
 
   userRegistration(userSignUp:UserSignUp)
   {
-      return this.httpclient.post(this.userAuthBaseUrl+"/register",userSignUp);
+      return this.httpclient.post("http://localhost:9000/app/v1/register",userSignUp);
   }
 
   userLogIn(user:any){
-      return this.httpclient.post(this.userAuthBaseUrl+"/login",user);
+      return this.httpclient.post("http://localhost:9000/app/v1/login",user);
   }
 
   loggedIn(){
@@ -28,11 +28,11 @@ export class UserAuthService {
   }
 
   getUserImage(user:any){
-    return this.httpclient.get(this.userAuthBaseUrl+"/file/"+user)
+    return this.httpclient.get("http://localhost:9000/app/v1/file/"+user)
   }
 
   uploadUserImage(image:any){
-    return this.httpclient.post(this.userAuthBaseUrl+"/file",image)
+    return this.httpclient.post("http://localhost:9000/app/v1/file",image)
   }
 
 

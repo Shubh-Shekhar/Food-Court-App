@@ -8,7 +8,7 @@ export class UserService {
 
   constructor(private httpclient:HttpClient) { }
 
-  userServcieUrl = 'http://localhost:9999/foodieApp/userService/';
+  userServcieUrl = 'http://localhost:9000/foodieApp/userService/';
 
   // orderUrl
 

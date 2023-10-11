@@ -45,6 +45,20 @@ searchText:string = "";
       // alert("test")
     }
   }
+  
+  
+  // search() {
+  //   if (this.searchText === '' || !this.searchText)
+  //   this.getAllRestaurant();
+  // else {
+  //   // this.allRestaurant = this.allRestaurant.filter(data => notes.title?.startsWith(this.searchText.toLowerCase()));
+  //   this.allRestaurant = this.allRestaurant.filter((restaurantName => restaurantName.title?. startsWith(this.searchText.toLowerCase())));
+  // }
+
+  // }
+
+
+
 
   allRestaurant:any;
 

@@ -22,7 +22,6 @@ import java.io.InputStream;
 import java.util.Map;
 
 @RestController
-@CrossOrigin
 @RequestMapping("/app/v1")
 public class UserController {
 

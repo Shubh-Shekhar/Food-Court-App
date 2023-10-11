@@ -96,12 +96,4 @@ export class RestaurantService {
     return this.httpClient.post(this.restaurantServiceUrl+"/file",image);
   }
 
-  // getRestaurantImage(restaurant:any){
-  //   return this.httpClient.get(this.restaurantServiceUrl+"/file/"+restaurant);
-  // }
-
-  // uploadRestaurantImage(image:any){
-  //   return this.httpClient.post(this.restaurantServiceUrl+"/file",image);
-  // }
-
 }

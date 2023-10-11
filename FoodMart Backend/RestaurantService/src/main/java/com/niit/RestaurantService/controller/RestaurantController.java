@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 
-@CrossOrigin
+
 @RequestMapping("/restaurant-service")
 @RestController
 public class RestaurantController {

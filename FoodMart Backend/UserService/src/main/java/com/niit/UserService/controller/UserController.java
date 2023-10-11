@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
-@CrossOrigin
+
 @RequestMapping("/foodieApp/userService")
 public class UserController {
 

@@ -11,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RequestMapping("/owner-auth")
-@CrossOrigin
 @RestController
 public class RestOwnerController {
 

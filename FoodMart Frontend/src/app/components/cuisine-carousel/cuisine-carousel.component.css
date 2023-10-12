@@ -48,7 +48,7 @@ body{
   .carousel.dragging img{
     pointer-events: none;
   }
-  
+
   .carousel img{
     display: inline-block;
     height: auto;
@@ -58,7 +58,7 @@ body{
     flex: 1;
     border-radius: 50%;
     box-shadow: rgb(0 0 0 / 45%) 0 5px 8px;
-  
+
   }
   .cuisineImg{
     display: inline-block;

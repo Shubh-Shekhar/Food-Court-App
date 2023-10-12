@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
-
 @RequestMapping("/foodieApp/userService")
 public class UserController {
 
@@ -25,10 +24,7 @@ public class UserController {
         return new ResponseEntity<>(userService.addUser(user), HttpStatus.OK);
     }
 
-//    @GetMapping("/getAllUser")
-//    public ResponseEntity<?> getAllUser() {
-//        return new ResponseEntity<>(userService.getAllUser(), HttpStatus.OK);
-//    }
+
 
     @GetMapping("/getUserDetails")
     public ResponseEntity<?> getUserDetails(HttpServletRequest request) {

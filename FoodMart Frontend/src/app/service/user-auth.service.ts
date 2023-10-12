@@ -16,11 +16,11 @@ export class UserAuthService {
 
   userRegistration(userSignUp:UserSignUp)
   {
-      return this.httpclient.post("http://localhost:9000/app/v1/register",userSignUp);
+      return this.httpclient.post('http://localhost:9000/app/v1/register',userSignUp);
   }
 
   userLogIn(user:any){
-      return this.httpclient.post("http://localhost:9000/app/v1/login",user);
+      return this.httpclient.post('http://localhost:9000/app/v1/login',user);
   }
 
   loggedIn(){
@@ -28,11 +28,11 @@ export class UserAuthService {
   }
 
   getUserImage(user:any){
-    return this.httpclient.get("http://localhost:9000/app/v1/file/"+user)
+    return this.httpclient.get('http://localhost:9000/app/v1/file/'+user)
   }
 
   uploadUserImage(image:any){
-    return this.httpclient.post("http://localhost:9000/app/v1/file",image)
+    return this.httpclient.post('http://localhost:9000/app/v1/file',image)
   }
 
 

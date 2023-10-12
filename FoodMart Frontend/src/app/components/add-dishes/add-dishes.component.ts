@@ -50,7 +50,7 @@ export class AddDishesComponent {
   get dishImage(){
     return this.dishForm.get('dishImage')
   }
-   
+
 
 
 
@@ -82,7 +82,7 @@ export class AddDishesComponent {
     this.uploadedImage = event.target.files[0];
   }
 
-  
+
   dbImage: any;
   postResponse: any;
   successResponse?: string;
@@ -95,11 +95,11 @@ export class AddDishesComponent {
     // this.service.propfilephoto="http://localhost:8082/images/"+this.dbImage;
     console.log(this.dbImage);
 
-  
+
     this.httpClient.post('http://localhost:8082/restaurant-service/dishUpload', imageFormData, { observe: 'response' })
       .subscribe((response) => {
         if (response.status === 200) {
-          
+
           this.postResponse = response;
           this.successResponse = this.postResponse.body.message;
         } else {
@@ -107,7 +107,7 @@ export class AddDishesComponent {
         }
       }
       );
-    } 
+    }
 
 
 }

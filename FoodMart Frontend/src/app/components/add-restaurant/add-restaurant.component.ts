@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { Restaurant } from 'src/app/model/restaurant/restaurant';
-import { RestaurantService } from 'src/app/service/restaurant.service';
+
 import {
   MatSnackBar,
   MatSnackBarHorizontalPosition,
   MatSnackBarVerticalPosition,
 } from '@angular/material/snack-bar';
 import { HttpClient } from '@angular/common/http';
+import {RestaurantService} from "../../service/restaurant.service";
 
 @Component({
   selector: 'app-add-restaurant',
@@ -28,25 +28,25 @@ export class AddRestaurantComponent {
   })
 
   get restaurantName(){
-      return this.restaurantForm.get('restaurantName')
+    return this.restaurantForm.get('restaurantName')
   }
 
   get location(){
     return this.restaurantForm.get('location')
-}
+  }
 
-get resImage(){
-  return this.restaurantForm.get('resImage')
-}
+  get resImage(){
+    return this.restaurantForm.get('resImage')
+  }
 
-emailId = localStorage.getItem("resOwnerEmail");
+  emailId = localStorage.getItem("resOwnerEmail");
 // emailId:string="admin@gmail.com";
 
-d:any = {}
+  d:any = {}
 
   registerRestuarant(){
     // const formData = { ...this.restaurantForm.value }; // create a copy of the form data
-    // const body = JSON.stringify(this.restaurantForm.value); 
+    // const body = JSON.stringify(this.restaurantForm.value);
     console.log(this.restaurantForm.value);
     this.imageUploadAction();
     this.d.resImage=this.dbImage;
@@ -84,18 +84,18 @@ d:any = {}
     // this.service.propfilephoto="http://localhost:8082/images/"+this.dbImage;
     console.log(this.dbImage);
 
-  
+
     this.httpClient.post('http://localhost:9000/restaurant-service/upload', imageFormData, { observe: 'response' })
       .subscribe((response) => {
-        if (response.status === 200) {
-          
-          this.postResponse = response;
-          this.successResponse = this.postResponse.body.message;
-        } else {
-          this.successResponse = 'Image not uploaded due to some error!';
+          if (response.status === 200) {
+
+            this.postResponse = response;
+            this.successResponse = this.postResponse.body.message;
+          } else {
+            this.successResponse = 'Image not uploaded due to some error!';
+          }
         }
-      }
       );
-    } 
+  }
 
 }

@@ -2,25 +2,16 @@
     flex: 1 1 auto;
   } */
   .backgroundImage{
-    background-image: url(https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/l-intro-1645057933.jpg);
+    background-image: url(https://media1.giphy.com/media/hWco3fzBujt2CqaQBB/200.gif?cid=790b7611wa7d57xmpe3ercnf4rlu73ghz8eq6ejrdd8bun1m&rid=200.gif&ct=s);
     background-repeat: no-repeat;
     width: 100%;
-    height: 95%;
+    height: 100%;
     position: absolute;
+
+
   }
+
 .slogan1{
-  margin-left: 4%;
-  font-size: 40px;
-  margin-top: 10px;
-  font-weight:700;
-  background-image: linear-gradient(45deg,greenyellow,navajowhite,darkseagreen,green,mediumvioletred);
-  background-size: cover;
-  background-position: center;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.slogan2{
   margin-left: 32%;
   font-size: 40px;
   margin-top: 50px;

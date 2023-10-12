@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 .image{
-    background-image: url(https://th.bing.com/th/id/OIP.CUYCtICZRk6Dzu2BObI_PAHaEo?w=270&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7);
+    background-image: url(https://media0.giphy.com/media/l41YuOpggq1hPIUhi/source.gif);
     /* background-repeat: no-repeat; */
     background-size: cover;
     height: 1200px;
@@ -17,14 +17,11 @@ mat-error{
 }
 
 form{
-    /* display: inline;
-    margin-left: 200px;
-    margin-right: 200px; */
+
     margin-top: 100px;
     height: 900px;
     width: 800px;
     background-color: rgb(15, 14, 14);
-    /* background-color: whitesmoke; */
     position: absolute;
     transform: translate(-50%,-50%);
     top: 70%;
@@ -89,22 +86,7 @@ button{
 .text{
   margin-left:4px;
 }
-/* .inline{
-    display: inline;
-    width: 200px;
-} */
-/* div{
-    display: inline;
-} */
-/* .flex{
-    display: flexb;
-} */
-/* .block{
-    width: 300px;
-} */
 
-
-/* saumya */
 .div1{
     display: flex;
   }
@@ -124,7 +106,7 @@ button:hover{
 
 .head{
     display: flex;
-    background-color: black;
+    background-color: #ff5722;
 }
 .head h1{
     color: white;

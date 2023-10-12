@@ -43,7 +43,7 @@ body{
   }
   .carousel.dragging{
     cursor: grab;
-    scroll-behavior:none;
+
   }
   .carousel.dragging img{
     pointer-events: none;

@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 .image{
-    background-image: url(https://th.bing.com/th?id=OIP._a43cOwEsGqO2K4i76EP_QHaEG&w=212&h=117&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2);
+    background-image: url(https://th.bing.com/th/id/OIP.CUYCtICZRk6Dzu2BObI_PAHaEo?w=270&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7);
     /* background-repeat: no-repeat; */
     background-size: cover;
     height: 1200px;
@@ -15,37 +15,6 @@ mat-error{
     font-size: 16px;
     width: 500px;
 }
-/* .background{
-    width: 430px;
-    height: 520px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-}
-.background .shape{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    border-radius: 50%;
-}
-.shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -80px;
-    top: -80px;
-}
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -30px;
-    bottom: -80px;
-} */
 
 form{
     /* display: inline;

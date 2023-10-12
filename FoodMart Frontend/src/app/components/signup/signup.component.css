@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 .image{
-    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-food-western-food-steak-tomato-picture-image_941801.jpg);
+    background-image: url(https://th.bing.com/th?id=OIP._a43cOwEsGqO2K4i76EP_QHaEG&w=212&h=117&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2);
     /* background-repeat: no-repeat; */
     background-size: cover;
     height: 1200px;
@@ -110,14 +110,16 @@ button{
     margin-top: 50px;
     width: 100%;
     background-color: #9a9393;
-    color: #080710;
+    color: #ff5722;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
 }
-
+.text{
+  margin-left:4px;
+}
 /* .inline{
     display: inline;
     width: 200px;

@@ -1,7 +1,7 @@
 <!-- <app-header></app-header> -->
 <a routerLink="/home">
     <div class="head">
-      <img src="../../../assets/images/fork.png" alt="#" style="height: 100px; width: 100px; margin-left: 600px;"><h1>Foodie</h1>
+      <img src="assets/images/foodzone.png" alt="#" style="height: 100px; width: 100px; margin-left: 600px;"><h1>Restaurant loop</h1>
     </div>
 </a>
 
@@ -24,20 +24,18 @@
                         </p>
                         <mat-error *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid"
                              style="color:red;font-size: small;">Please enter Valid Email id</mat-error>
-                        <p> 
-                            <label>Password<span>*</span></label> 
+                        <p>
+                            <label>Password<span>*</span></label>
                             <input type="password" placeholder="Password" formControlName="password">
                          </p>
                             <mat-error *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid"
                             style="color:red;font-size: small;">Please enter Valid Password</mat-error>
                         <p>
-                            <input type="button" value="Sign In" (click)="userLogIn()"> 
+                            <input type="button" value="Sign In" (click)="userLogIn()">
                         </p>
-                        <!-- <p>
-                             <a href="">Forgot password?</a> 
-                        </p> -->
+
                     </form>
-                    
+
                 </div>
             </div>
         </div>

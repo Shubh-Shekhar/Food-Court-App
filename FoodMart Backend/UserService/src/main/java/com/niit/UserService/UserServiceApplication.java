@@ -17,7 +17,7 @@ public class UserServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(UserServiceApplication.class, args);
-        System.out.println("==============User-Service is Processing!!!==================");
+        System.out.println("==============User-Service is Processing on 9000!!!==================");
     }
 
     @Bean

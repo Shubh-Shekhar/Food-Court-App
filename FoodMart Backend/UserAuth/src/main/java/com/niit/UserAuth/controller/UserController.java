@@ -93,7 +93,7 @@ public class UserController {
             throw new RuntimeException(e);
         }
 
-        ImageModel imageModel = new ImageModel(fileName, "Image is sucessfully uploaded");
+        ImageModel imageModel = new ImageModel(fileName, "Image is successfully uploaded");
 
         return new ResponseEntity<>(imageModel, HttpStatus.CREATED);
 

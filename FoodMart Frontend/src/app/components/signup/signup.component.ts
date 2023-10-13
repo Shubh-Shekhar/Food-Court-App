@@ -43,7 +43,7 @@ d:any={}
   sendSignupData(){
     console.log(this.signupForm.value);
     this.imageUploadAction();
-this.d.pi=this.dbImage;
+this.d.pic=this.dbImage;
 this.d.firstName=this.signupForm.value.firstName;
 this.d.email=this.signupForm.value.email;
 this.d.password=this.signupForm.value.password;

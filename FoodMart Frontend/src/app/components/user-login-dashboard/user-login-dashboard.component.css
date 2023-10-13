@@ -19,7 +19,10 @@ a{
     padding: 5px;
     border-radius: 10px;
     width: 40px;
-    background-color: white;
+    background-color: rgb(101, 12, 12);
+    color: wheat;
+    opacity: 0.1rem;
+    
 
 }
 

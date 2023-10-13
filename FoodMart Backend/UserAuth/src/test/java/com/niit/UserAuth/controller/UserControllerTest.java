@@ -3,8 +3,8 @@ package com.niit.UserAuth.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.niit.UserAuth.domain.user.User;
-import com.niit.UserAuth.domain.user.UserSignUp;
+import com.niit.UserAuth.domain.User;
+import com.niit.UserAuth.domain.UserSignUp;
 import com.niit.UserAuth.service.UserServiceImpl;
 import com.niit.UserAuth.token.SecurityTokenGenerator;
 import org.junit.jupiter.api.AfterEach;

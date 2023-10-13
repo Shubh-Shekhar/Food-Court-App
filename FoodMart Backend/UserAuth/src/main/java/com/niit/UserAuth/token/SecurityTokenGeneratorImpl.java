@@ -1,6 +1,6 @@
 package com.niit.UserAuth.token;
 
-import com.niit.UserAuth.domain.user.User;
+import com.niit.UserAuth.domain.User;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.stereotype.Service;

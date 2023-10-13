@@ -1,6 +1,6 @@
 package com.niit.UserAuth.token;
 
-import com.niit.UserAuth.domain.user.User;
+import com.niit.UserAuth.domain.User;
 
 import java.util.Map;
 

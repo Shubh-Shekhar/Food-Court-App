@@ -1,4 +1,4 @@
-package com.niit.UserAuth.domain.user;
+package com.niit.UserAuth.domain;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;

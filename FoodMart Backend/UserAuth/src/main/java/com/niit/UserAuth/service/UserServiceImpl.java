@@ -75,8 +75,6 @@ public class UserServiceImpl implements IUserService {
                     userSignUp.getBuildingName(), userSignUp.getStreetName(), userSignUp.getMobileNo(), userSignUp.getFlatNo(), userSignUp.getCity(), userSignUp.getState(),
                     userSignUp.getPincode(), userSignUp.getPic()));
             User user = userRepository.save(new User(userSignUp.getEmail(), userSignUp.getPassword()));
-//            mailProducer.sendMailDtoToQueue(new EmailDTO(user.getEmail(), "You Have Successfully Registered To Foodie-App...." +
-//                    " \n Thank You For Using Our Services!!!", "USER REGISTRATION SUCCESSFUL"));
             sendMail(userSignUp.getEmail(), "USER REGISTRATION SUCCESSFUL"
                     , "Hii " + userSignUp.getFirstName() + " you have successfully registered to Foddie-App \nWlcome to Foodie-App");
             return user;

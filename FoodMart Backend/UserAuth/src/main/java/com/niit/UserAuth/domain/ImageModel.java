@@ -1,31 +1,15 @@
 package com.niit.UserAuth.domain;
 
-import lombok.Data;
+import lombok.*;
 
-@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
 public class ImageModel {
 
     private String fileName;
     private String message;
 
-    public ImageModel(String fileName, String message) {
-        this.fileName = fileName;
-        this.message = message;
-    }
-
-    public String getFileName() {
-        return fileName;
-    }
-
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
 }

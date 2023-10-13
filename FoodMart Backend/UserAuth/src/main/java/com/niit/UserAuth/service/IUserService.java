@@ -13,15 +13,15 @@ import java.util.List;
 
 public interface IUserService {
 
-    public User userRegistration(UserSignUp userSignUp) throws UserAlreadyExistException;
+    User userRegistration(UserSignUp userSignUp) throws UserAlreadyExistException;
 
-    public User loginCheck(String email, String password) throws InvalidCredentialsException;
+    User loginCheck(String email, String password) throws InvalidCredentialsException;
 
-    public List<User> getAllUser();
+    List<User> getAllUser();
 
-    public int generateOTP();
+    int generateOTP();
 
-    public int sendOTP(String email);
+    int sendOTP(String email);
 
     String uploadImage(String path, MultipartFile file) throws IOException;
 

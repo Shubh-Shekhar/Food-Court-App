@@ -14,7 +14,7 @@ import java.util.Optional;
 @Service
 public class ImageService {
 
-    private final String filePath = "D:\\Wave 38\\Capstone-Project\\Foodie-App-Backend\\UserAuth\\src\\main\\resources\\Image\\";
+    private final String filePath = "D:\\foodie-application\\food-delivery\\FoodMart Backend\\UserAuth\\src\\main\\resources\\Image";
     @Autowired
     private ImageRepository imageRepository;
 

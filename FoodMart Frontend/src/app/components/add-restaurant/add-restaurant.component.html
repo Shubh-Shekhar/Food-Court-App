@@ -1,6 +1,6 @@
 <mat-toolbar class="head">
-    <img src="../../../assets/images/fork.png" alt="">
-    <span>Foodie</span>
+    <img src="assets/images/foodzone.png" alt="">
+    <span class="ms-2">Food Zone</span>
     <span class="example-spacer"></span>
     <a routerLink="../restaurantDashboard" href=""><mat-icon>dashboard</mat-icon>Dashboard</a>
     <a routerLink="../home" href=""><mat-icon>logout</mat-icon>Logout</a>
@@ -38,7 +38,7 @@
             src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             class="d-block img" alt="...">
           <div class="carousel-caption d-none d-md-block">
-  
+
             <p>Receive orders from your area</p>
           </div>
         </div>
@@ -57,18 +57,18 @@
 <div class="addDish">
     <main class="form-signin w-100 m-auto">
       <form [formGroup]="restaurantForm">
-        <div style="text-align: center;"><img class="mb-4" src="../../../assets/images/Foodie.png" alt="" width="72" height="57">
+        <div style="text-align: center;"><img class="mb-4" src="assets/images/foodzone.png" alt="" width="72" height="57">
         </div>
-  
+
         <h1 class="h3 mb-3 fw-normal">Add Your Restaurant</h1>
 
-  
+
         <div class="form-floating">
           <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="restaurantName">
           <label for="floatingInput">Restaurant Name</label>
         </div>
 
-        
+
 
         <div class="form-floating">
           <input type="text" class="form-control" id="floatingPassword" placeholder="Password" formControlName="location">
@@ -76,12 +76,12 @@
         </div>
 
         <div class="form-floating">
-          <input style=" margin-top: 5px;" type="file"  (change)="onImageUpload($event)" formControlName="resImage">  
+          <input style=" margin-top: 5px;" type="file"  (change)="onImageUpload($event)" formControlName="resImage">
         </div>
         <br>
 
-  
-  
+
+
         <button class="w-100 btn btn-lg btn-primary"  (click)="registerRestuarant()">Add Restaurant</button>
       </form>
     </main>

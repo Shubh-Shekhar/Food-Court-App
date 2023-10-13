@@ -11,7 +11,7 @@
 }
 .head{
     display: flex;
-    background-color: black;
+    background-color: #ff5722;
 }
 .head h1{
     color: white;

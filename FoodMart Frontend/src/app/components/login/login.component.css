@@ -1,16 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-* {
-    box-sizing: border-box;
-}
 
-/* body {
-    margin: 0;
-    font-family: poppins, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #666666;
-    background: #eaeff4;
-} */
+
+
+
 
 .wrapper {
     margin: 0 auto;
@@ -31,7 +22,7 @@
     max-width: 600px;
     height: auto;
     display: flex;
-    background: #ffffff;
+    background: #ff574e;
     box-shadow: 0 0 5px #999999;
 }
 
@@ -44,7 +35,7 @@
 .login .col-left {
     width: 60%;
     clip-path: polygon(0 0, 0% 100%, 100% 0);
-    background: black;
+    background: yellowgreen;
     /* #2aa15f */
 }
 
@@ -133,7 +124,7 @@
 }
 
 .login .login-form p a {
-    color: black;
+    color: #ff5722;
     font-size: 14px;
     text-decoration: none;
 }
@@ -193,7 +184,7 @@
 
 .bg{
     /* background-color: rgb(180, 171, 171); */
-    background-image: url(https://img.freepik.com/premium-photo/colorful-various-herbs-spices-cooking-dark-background_370312-476.jpg);
+    background-image: url(https://img.freepik.com/premium-photo/colorful-variousng-dark-background_370312-476.jpg-herbs-spices-cooki);
     /* background-repeat: no-repeat; */
     background-size: cover;
 }
@@ -201,7 +192,7 @@
 
 .head{
     display: flex;
-    background-color: black;
+    background-color: #ff5722;
 }
 .head h1{
     color: white;

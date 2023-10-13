@@ -1,6 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Dishes } from '../model/restaurant/dishes';
 import { Restaurant } from '../model/restaurant/restaurant';
 
 @Injectable({

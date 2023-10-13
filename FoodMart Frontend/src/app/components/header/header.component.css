@@ -1,6 +1,7 @@
 img{
-    width: 80px;
+    width: 100px;
     height: 64px;
+
 }
 a{
     color: white;
@@ -8,8 +9,14 @@ a{
     margin-left: 50px;
 }
 .head{
-    background-color: black;
+    background-color: #ff5722;
 }
 .example-spacer {
     flex: 1 1 auto;
   }
+.logo-text{
+  color: #eeeeee;
+  font-weight: bold;
+  margin-left: 4px;
+  font-family: "Lucida Fax";
+}

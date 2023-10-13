@@ -1,31 +1,21 @@
-/* .example-spacer {
-    flex: 1 1 auto;
-  } */
+
   .backgroundImage{
-    background-image: url(https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/l-intro-1645057933.jpg);
+    background-image: url(https://media1.giphy.com/media/hWco3fzBujt2CqaQBB/200.gif?cid=790b7611wa7d57xmpe3ercnf4rlu73ghz8eq6ejrdd8bun1m&rid=200.gif&ct=s);
     background-repeat: no-repeat;
     width: 100%;
-    height: 95%;
+    height: 100%;
     position: absolute;
+    background-color:#393e46;
+
+
   }
+
 .slogan1{
-  margin-left: 4%;
-  font-size: 40px;
-  margin-top: 10px;
-  font-weight:700;
-  background-image: linear-gradient(45deg,greenyellow,navajowhite,darkseagreen,green,mediumvioletred);
-  background-size: cover;
-  background-position: center;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.slogan2{
   margin-left: 32%;
   font-size: 40px;
   margin-top: 50px;
   font-weight:700;
-  background-image: linear-gradient(45deg,yellow,pink,blue,green,navajowhite,deepskyblue);
+  background-image: linear-gradient(45deg,seagreen,pink,blue,green,navajowhite,deepskyblue);
   background-size: cover;
   background-position: center;
   background-clip: text;
@@ -45,7 +35,6 @@
     border-radius: 3px;
     background-color: red;
     color: whitesmoke;
-    /* padding-top: 12px; */
   }
   #select{
     border-radius: 5px;
@@ -56,15 +45,10 @@
     border-radius: 5px;
   }
   .marquee {
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
     height: 80px;
     overflow: hidden;
-    background-color: black;
+    background-color: #ff5722;
     padding: 1rem 0px;
-    /* transform: rotate(-1deg); */
     transform: translateY(-4rem) rotate(-1deg);
 
   }
@@ -72,22 +56,10 @@
   .marquee__content {
     padding: 1rem 0px;
     display: inline-block;
-    /* white-space: nowrap; */
     padding-right: 100%;
     animation: marquee 500s linear infinite;
-    /* border: none; */
     border-top: 10px dotted white;
-    /* border-bottom: 10px dotted white; */
-    /* border-image: repeating-linear-gradient(
-          to bottom,
-          transparent 10px,
-          transparent 10px,
-          white 10px,
-          white 20px
-        ) 1 1; */
-        /* border-spacing: 10px 0; */
     font-weight: bold;
-    /* overflow: hidden; */
     color: white;
     font-size: 15px;
     height: 100%;

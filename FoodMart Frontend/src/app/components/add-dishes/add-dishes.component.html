@@ -1,7 +1,7 @@
 <div>
     <mat-toolbar class="head">
-        <img src="../../../assets/images/fork.png" alt="">
-        <span>Foodie</span>
+        <img src="assets/images/foodzone.png" alt="">
+        <span>Food Zone</span>
         <span class="example-spacer"></span>
         <a routerLink="../restaurantDashboard" href=""><mat-icon>dashboard</mat-icon>Dashboard</a>
         <a routerLink="../home" href=""><mat-icon>logout</mat-icon>Logout</a>
@@ -39,7 +39,7 @@
                 src="https://images.indianexpress.com/2017/07/biryani1.jpg"
                 class="d-block img" alt="...">
               <div class="carousel-caption d-none d-md-block">
-      
+
                 <p>Receive orders from your area</p>
               </div>
             </div>
@@ -57,9 +57,9 @@
 
       <div class="addDish">
         <main class="form-signin w-100 m-auto">
-          
+
           <div>
-            <div style="text-align: center;"><img class="mb-4" src="../../../assets/images/Foodie.png" alt="" width="72" height="57"></div>
+            <div style="text-align: center;"><img class="mb-4" src="assets/images/foodzone.png" alt="" width="72" height="57"></div>
               <h1 class="h3 mb-3 fw-normal">Add Your Dish</h1>
             <form [formGroup]="restaurantForm">
               <div class="form-floating">
@@ -70,33 +70,33 @@
           </div>
 
           <form [formGroup]="dishForm">
-            
-      
+
+
             <div class="form-floating">
-              <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="dishName">
+              <input type="text" class="form-control"  placeholder="name@example.com" formControlName="dishName">
               <label for="floatingInput">Dish Name</label>
             </div>
             <div class="form-floating">
               <!-- <input type="" class="form-control" id="floatingPassword" placeholder="Password" formControlName="type"> -->
-              <select class="form-control" id="floatingPassword"  formControlName="type">
+              <select class="form-control"   formControlName="type">
                 <option value="veg">veg</option>
                 <option value="non-veg">non-veg</option>
               </select>
-              <label for="floatingPassword">Select Dish Type</label>
-            </div>
-      
-            <div class="form-floating">
-              <input type="number" class="form-control" id="floatingPassword" placeholder="Password"formControlName="dishPrice">
-              <label for="floatingPassword">Price</label>
+              <label >Select Dish Type</label>
             </div>
 
             <div class="form-floating">
-              <input style=" margin-top: 5px;" type="file"  (change)="onImageUpload($event)" formControlName="dishImage">  
+              <input type="number" class="form-control"  placeholder="Password"formControlName="dishPrice">
+              <label>Price</label>
+            </div>
+
+            <div class="form-floating">
+              <input style=" margin-top: 5px;" type="file"  (change)="onImageUpload($event)" formControlName="dishImage">
             </div>
             <br>
-            
-      
-      
+
+
+
             <button class="w-100 btn btn-lg btn-primary" (click)="addDishes()">Add dish</button>
           </form>
         </main>

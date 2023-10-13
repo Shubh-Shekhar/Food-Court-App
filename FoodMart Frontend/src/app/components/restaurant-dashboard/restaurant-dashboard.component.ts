@@ -26,7 +26,7 @@ export class RestaurantDashboardComponent {
     ),(error: any)=>{
       console.log(error)
     }
-      
+
   }
 
 }

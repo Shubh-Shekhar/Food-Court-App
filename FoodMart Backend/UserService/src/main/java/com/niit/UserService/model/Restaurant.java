@@ -13,16 +13,10 @@ import java.util.Set;
 @Builder
 public class Restaurant {
 
-    private String restaurantName;   //dominos
+    private String restaurantName;
 
-    private String location;        //pune
+    private String location;
     private String resImage;
     private Set<Dishes> dishesSet;
-//    @Id
-//    private String restaurantId;
-//    private String restaurantName;
-//    private String restaurantImage;
-//    private List<Dishes> dishes;
-//    private String emailId;
-//    private List<Order> orders;
+
 }

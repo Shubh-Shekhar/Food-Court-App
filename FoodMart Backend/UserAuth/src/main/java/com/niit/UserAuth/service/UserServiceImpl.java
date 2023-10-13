@@ -38,13 +38,6 @@ public class UserServiceImpl implements IUserService {
     @Autowired
     private JavaMailSender javaMailSender;
 
-
-//    @Autowired
-//    public UserServiceImpl(UserRepository userRepository, UserProxy userProxy) {
-//        this.userRepository = userRepository;
-//        this.userProxy = userProxy;
-//    }
-
     public void sendMail(String receiver, String subject, String body) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         simpleMailMessage.setFrom("foodieapp64@gmail.com");
@@ -80,7 +73,7 @@ public class UserServiceImpl implements IUserService {
         if (userRepository.findById(userSignUp.getEmail()).isEmpty()) {
             userProxy.sendDataToRestaurantService(new UserDto(userSignUp.getFirstName(), userSignUp.getLastName(), userSignUp.getEmail(),
                     userSignUp.getBuildingName(), userSignUp.getStreetName(), userSignUp.getMobileNo(), userSignUp.getFlatNo(), userSignUp.getCity(), userSignUp.getState(),
-                    userSignUp.getPincode(), userSignUp.getPi()));
+                    userSignUp.getPincode(), userSignUp.getPic()));
             User user = userRepository.save(new User(userSignUp.getEmail(), userSignUp.getPassword()));
 //            mailProducer.sendMailDtoToQueue(new EmailDTO(user.getEmail(), "You Have Successfully Registered To Foodie-App...." +
 //                    " \n Thank You For Using Our Services!!!", "USER REGISTRATION SUCCESSFUL"));

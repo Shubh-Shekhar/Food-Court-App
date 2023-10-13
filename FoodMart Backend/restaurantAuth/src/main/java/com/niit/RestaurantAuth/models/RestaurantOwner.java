@@ -14,11 +14,8 @@ import javax.persistence.Id;
 @NoArgsConstructor
 public class RestaurantOwner {
 
- @Id
- private String emailId;
+    @Id
+    private String emailId;
     private String ownerName;
     private String password;
-// private String role;
-
-
 }

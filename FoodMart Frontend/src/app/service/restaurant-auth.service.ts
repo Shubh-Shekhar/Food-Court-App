@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { RestaurantSignUp } from '../model/restaurant/restaurant-sign-up';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'

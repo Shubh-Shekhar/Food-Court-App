@@ -26,12 +26,12 @@ public class TokenGenImpl implements SecurityTokenGeneratorRestaurant {
                 .setClaims(tokenData)
                 .setIssuedAt(new Date())
                 .setIssuer("Restaurant_Owner")
-                .signWith(SignatureAlgorithm.HS512, "Fooide-app-owner-key")
+                .signWith(SignatureAlgorithm.HS512, "FoodZone-Key")
                 .compact();
 
         token.put("token", tokenBuilder);
         token.put("emailId", restaurantOwner.getEmailId());
-        token.put("message", "login succes, token generated");
+        token.put("message", "login success, token generated");
 
         return token;
     }

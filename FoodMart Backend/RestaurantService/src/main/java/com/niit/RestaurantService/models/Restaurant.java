@@ -20,9 +20,9 @@ import java.util.Objects;
 public class Restaurant {
 
     @Id
-    private String restaurantName;   //dominos
+    private String restaurantName;
 
-    private String location;        //pune
+    private String location;
     private String resImage;
     private List<Dishes> dishesSet;
 

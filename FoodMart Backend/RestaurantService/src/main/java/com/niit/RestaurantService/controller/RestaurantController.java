@@ -49,9 +49,9 @@ public class RestaurantController {
         }
     }
 
-    @PostMapping("/add-dish/{resturatName}")
-    public ResponseEntity<?> addDishes(@RequestBody Dishes dish, @PathVariable String resturatName) {
-        return new ResponseEntity<>(restaurantService.addDishesToRestaurant(resturatName, dish), HttpStatus.OK);
+    @PostMapping("/add-dish/{restaurantName}")
+    public ResponseEntity<?> addDishes(@RequestBody Dishes dish, @PathVariable String restaurantName) {
+        return new ResponseEntity<>(restaurantService.addDishesToRestaurant(restaurantName, dish), HttpStatus.OK);
     }
 
     @GetMapping("/getAllDishes")
@@ -124,7 +124,7 @@ public class RestaurantController {
             throw new RuntimeException(e);
         }
 
-        ImageModel imageModel = new ImageModel(fileName, "Image is sucessfully uploaded");
+        ImageModel imageModel = new ImageModel(fileName, "Image successfully uploaded");
 
         return new ResponseEntity<>(imageModel, HttpStatus.CREATED);
 

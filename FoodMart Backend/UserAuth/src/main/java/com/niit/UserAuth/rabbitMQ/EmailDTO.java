@@ -8,5 +8,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EmailDTO {
-    private String reciever, messageBody, subject;
+    private String receiver, messageBody, subject;
 }

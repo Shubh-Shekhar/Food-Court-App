@@ -29,7 +29,7 @@ public class JwtFilter extends GenericFilterBean {
             String ownerToken = header.substring(7);
 
             Claims claims = Jwts.parser()
-                    .setSigningKey("Fooide-app-owner-key")
+                    .setSigningKey("FoodZone-Key")
                     .parseClaimsJws(ownerToken)
                     .getBody();
 

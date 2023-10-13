@@ -39,12 +39,5 @@ public class RestOwnerController {
             throw new InvalidCredentialsException();
         }
     }
-//        RestaurantOwner ownerCred = restaurantAuthService.restaurantOwnerLogin(restaurantOwner.getEmail(), restaurantOwner.getPassword());
-//        if (ownerCred != null) {
-//            return new ResponseEntity<>(securityTokenGeneratorRestaurant.tokenGeneration(ownerCred), HttpStatus.OK);
-//        } else
-//            return new ResponseEntity<>("No user found, please login", HttpStatus.OK);
-//    }
-
 
 }

@@ -45,7 +45,7 @@ showHideIcons(){
     console.log(this.firstImgWidth)
 
     this.carousel!.scrollLeft += <number>((<HTMLElement>e.target).id == "leftArrow"? -<number>this.firstImgWidth:this.firstImgWidth);
-   setTimeout(()=>this.showHideIcons(),60);
+   setTimeout(()=>this.showHideIcons(),6000);
     console.log(this.firstImgWidth)
     console.log(" onclick scollLft "+this.carousel?.scrollLeft)
 

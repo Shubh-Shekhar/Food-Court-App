@@ -26,11 +26,6 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(user);
     }
 
-//    @Override
-//    public List<User> getAllUser() {
-//        return userRepository.findAll();
-//    }
-
     @Override
     public User getUserDetails(String emailId) {
         User user = userRepository.findById(emailId).get();
@@ -54,13 +49,6 @@ public class UserServiceImpl implements UserService {
         }
 
     }
-
-//    public User addDishFavourite(String emailId, Dishes dishes){
-//        User user = userRepository.findById(emailId).get();
-//        if (user.getFavourites()==null){
-//            user.setFavourites(Arrays.asList(dishes));
-//        }
-//    }
 
     @Override
     public Set<Restaurant> addRestaurantToUserFavourite(String emailId, Restaurant restaurant) {

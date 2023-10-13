@@ -34,7 +34,7 @@ public class RestaurantServiceImpl implements RestaurantAuthService {
 
     public void sendMail(String receiver, String subject, String body) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        simpleMailMessage.setFrom("foodieapp64@gmail.com");
+        simpleMailMessage.setFrom("shubhamshekhar725@gmail.com");
         simpleMailMessage.setTo(receiver);
         simpleMailMessage.setText(body);
         simpleMailMessage.setSubject(subject);
@@ -42,24 +42,14 @@ public class RestaurantServiceImpl implements RestaurantAuthService {
         System.out.println("Mail sent...");
     }
 
-//    @Autowired
-//    public RestaurantServiceImpl(RestaurantAuthService restaurantAuthService, RestaurantOwnerRepo restaurantOwnerRepo, OwnerProxy ownerProxy, MailProducer mailProducer) {
-//        this.restaurantAuthService = restaurantAuthService;
-//        this.restaurantOwnerRepo = restaurantOwnerRepo;
-//        this.ownerProxy = ownerProxy;
-//        this.mailProducer = mailProducer;
-//    }
 
     @Override
-//    @EventListener(ApplicationReadyEvent.class)
     public RestaurantOwner signUpOwner(RestaurantOwner restaurantOwner) throws EmailAlreadyRegistered {
         if (restaurantOwnerRepo.findById(restaurantOwner.getEmailId()).isPresent()) throw new EmailAlreadyRegistered();
         RestaurantOwnerDTO restaurantOwnerDTO = new RestaurantOwnerDTO(restaurantOwner.getEmailId(), restaurantOwner.getOwnerName());
         ResponseEntity<?> response = ownerProxy.sendDataToService(restaurantOwnerDTO);
-//        mailProducer.sendMailDtoToQueue(new EmailDTO(restaurantOwner.getEmailId(), "You Have Successfully Registered To Foodie-App...." +
-//                " \n Thank You For Using Our Services!!!", "RESTAURANT OWNER REGISTRATION SUCCESSFUL"));
         sendMail(restaurantOwner.getEmailId(), "RESTAURANT OWNER REGISTRATION SUCCESSFUL",
-                "Hii " + restaurantOwner.getOwnerName() + " you have been successfully Registered to Foodie-App...");
+                "Hi !!! " + restaurantOwner.getOwnerName() + "Welcome to FoodZone ...");
 
         return restaurantOwnerRepo.save(restaurantOwner);
     }
@@ -69,16 +59,7 @@ public class RestaurantServiceImpl implements RestaurantAuthService {
         RestaurantOwner restaurantOwner1 = restaurantOwnerRepo.findByEmailIdAndPassword(restaurantOwner.getEmailId(), restaurantOwner.getPassword());
         if (restaurantOwner1 == null) throw new InvalidCredentialsException();
         else return restaurantOwner1;
-//        if (restaurantOwnerRepo.findById(email).isPresent()) {
-//            RestaurantOwner restaurantOwner = restaurantOwnerRepo.findById(email).get();
-//            if (restaurantOwner.getPassword().equals(password)) {
-//                return restaurantOwner;
-//            } else {
-//                throw new InvalidCredentialsException();
-//            }
-//        } else {
-//            throw new InvalidCredentialsException();
-//        }
+
     }
 
 }

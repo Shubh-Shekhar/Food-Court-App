@@ -40,8 +40,7 @@ public class UserServiceImpl implements IUserService {
 
     public void sendMail(String receiver, String subject, String body) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-//        simpleMailMessage.setFrom("foodieapp64@gmail.com");
-        simpleMailMessage.setFrom("foodzone61@gmail.com");
+        simpleMailMessage.setFrom("shubhamshekhar725@gmail.com");
         simpleMailMessage.setTo(receiver);
         simpleMailMessage.setText(body);
         simpleMailMessage.setSubject(subject);
@@ -77,7 +76,7 @@ public class UserServiceImpl implements IUserService {
                     userSignUp.getPincode(), userSignUp.getPic()));
             User user = userRepository.save(new User(userSignUp.getEmail(), userSignUp.getPassword()));
             sendMail(userSignUp.getEmail(), "USER REGISTRATION SUCCESSFUL"
-                    , "Hii " + userSignUp.getFirstName() + " you have successfully registered to Foddie-App \nWlcome to Foodie-App");
+                    , "Hi !!! " + userSignUp.getFirstName() + "Welcome to FoodZone !!! Please Explore more...!!!");
             return user;
         }
         throw new UserAlreadyExistException();

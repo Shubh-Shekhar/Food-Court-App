@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Dishes {
-    private String dishName;  //veg-pizza
-    private String type;        //veg
+    private String dishName;
+    private String type;
     private int dishPrice;
     private String dishImage;
     private int quantity;

@@ -43,7 +43,7 @@ public class RestaurantImpl implements RestaurantService {
 
 
     @Override
-public InputStream getImage(String path, String fileName) throws FileNotFoundException {
+    public InputStream getImage(String path, String fileName) throws FileNotFoundException {
     String fullPath = path + File.separator + fileName;
     InputStream inputStream = new FileInputStream(fullPath);
     return inputStream;

@@ -110,7 +110,7 @@ public class UserServiceImpl implements IUserService {
     @Override
     public int sendOTP(String email) {
         int otp = generateOTP();
-        String mailBodyWithOtp = "Foodie-App OTP Verification : " + otp;
+        String mailBodyWithOtp = "Food Zone OTP Verification : " + otp;
         EmailDTO emailDTO = new EmailDTO(email, mailBodyWithOtp, "OTP");
         mailProducer.sendMailDtoToQueue(emailDTO);
         System.out.println(emailDTO);

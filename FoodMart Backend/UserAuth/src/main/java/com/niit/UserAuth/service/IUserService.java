@@ -19,6 +19,10 @@ public interface IUserService {
 
     List<User> getAllUser();
 
+    int generateOTP();
+
+     int sendOTP(String email);
+
 
 
     String uploadImage(String path, MultipartFile file) throws IOException;

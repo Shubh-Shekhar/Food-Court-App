@@ -36,6 +36,11 @@ public class UserController {
         this.userService = userService;
         this.securityTokenGenerator = securityTokenGenerator;
     }
+    @GetMapping("/otp")
+    public ResponseEntity<?> getOtp(@RequestBody String email) {
+        System.out.println(email);
+        return new ResponseEntity<>(userService.sendOTP(email), HttpStatus.OK);
+    }
 
 
 

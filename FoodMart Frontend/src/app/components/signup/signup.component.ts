@@ -27,7 +27,7 @@ export class SignupComponent {
     'firstName': new FormControl('',[Validators.required,Validators.minLength(3)]),
     'lastName':new FormControl('',[Validators.required,Validators.minLength(3)]),
     'email':new FormControl('',[Validators.required,Validators.pattern(this.emailpattern)]),
-    'password':new FormControl('',[Validators.required,Validators.pattern('^[A-Za-z0-9._%+-]{8,}')]),    
+    'password':new FormControl('',[Validators.required,Validators.pattern('^[A-Za-z0-9._%+-]{8,}')]),
      'mobileNo':new FormControl('',Validators.pattern(/^[789]\d{9,9}$/)),
      'buildingName':new FormControl('',Validators.required),
      'streetName':new FormControl('',Validators.required),
@@ -36,9 +36,9 @@ export class SignupComponent {
      'flatNo':new FormControl('',Validators.required),
      'pincode':new FormControl('',[Validators.required,Validators.minLength(6)]),
      'image':new FormControl('',Validators.required)
-       
+
   })
- 
+
 d:any={}
   sendSignupData(){
     console.log(this.signupForm.value);
@@ -48,7 +48,7 @@ this.d.firstName=this.signupForm.value.firstName;
 this.d.email=this.signupForm.value.email;
 this.d.password=this.signupForm.value.password;
 
-    
+
 
     this.userAuthService.userRegistration(this.d).subscribe(
        response=>{
@@ -67,7 +67,7 @@ this.d.password=this.signupForm.value.password;
       });
     }
   }
-  
+
 
   get firstName() { return this.signupForm.get("firstName") }
 
@@ -101,7 +101,7 @@ this.d.password=this.signupForm.value.password;
   dbImage: any;
   postResponse: any;
   successResponse?: string;
-  
+
   imageUploadAction() {
     const imageFormData = new FormData();
     imageFormData.append('image', this.uploadedImage, this.uploadedImage.name);
@@ -110,11 +110,11 @@ this.d.password=this.signupForm.value.password;
     // this.service.propfilephoto="http://localhost:8082/images/"+this.dbImage;
     console.log(this.dbImage);
 
-  
+
     this.httpClient.post('http://localhost:9000/app/v1/upload', imageFormData, { observe: 'response' })
       .subscribe((response) => {
         if (response.status === 200) {
-          
+
           this.postResponse = response;
           this.successResponse = this.postResponse.body.message;
         } else {
@@ -122,5 +122,5 @@ this.d.password=this.signupForm.value.password;
         }
       }
       );
-    } 
+    }
 }

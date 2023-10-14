@@ -33,7 +33,6 @@ import { RestaurantDashboardComponent } from './components/restaurant-dashboard/
 import { HttpClientModule } from '@angular/common/http';
 import { AddRestaurantComponent } from './components/add-restaurant/add-restaurant.component';
 import { AddDishesComponent } from './components/add-dishes/add-dishes.component';
-import { UploadUserImageComponent } from './components/upload-user-image/upload-user-image.component';
 import { RestaurantHeaderComponent } from './components/restaurant-header/restaurant-header.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { ThanksComponent } from './components/thanks/thanks.component';
@@ -62,7 +61,6 @@ import { ViewComponent } from './components/view/view.component';
     RestaurantDashboardComponent,
     AddRestaurantComponent,
     AddDishesComponent,
-    UploadUserImageComponent,
     RestaurantHeaderComponent,
     ThanksComponent,
     ViewComponent

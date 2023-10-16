@@ -69,40 +69,40 @@ public class UserController {
 
     }
 
-    @PostMapping("/deleteDishesFromUserFavourite")
+    @DeleteMapping("/deleteDishesFromUserFavourite")
     public ResponseEntity<?> deleteCuisineFromUserWishlist(@RequestBody Dishes dishes, HttpServletRequest request) {
         String emailId = (String) request.getAttribute("emailId");
         return new ResponseEntity<>(userService.deleteDishFromUserFavourite(emailId, dishes)
                 , HttpStatus.OK);
     }
 
-    @PostMapping("/deleteRestaurantFromUserFavourite")
+    @DeleteMapping("/deleteRestaurantFromUserFavourite")
     public ResponseEntity<?> deleteRestaurantFromUserFavourite(@RequestBody Restaurant restaurant, HttpServletRequest request) {
         String emailId = (String) request.getAttribute("emailId");
         userService.deleteRestaurantFromUserFavourite(emailId, restaurant);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @PostMapping("/deleteDishesFromUserCart")
+    @DeleteMapping("/deleteDishesFromUserCart")
     public ResponseEntity<?> deleteDishFromUserCart(@RequestBody Dishes dishes, HttpServletRequest request) {
         String emailId = (String) request.getAttribute("emailId");
         userService.deleteDishFromUserCart(emailId, dishes);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @PostMapping("/deleteAllDishesFromUserCart")
+    @DeleteMapping("/deleteAllDishesFromUserCart")
     public ResponseEntity<?> deleteDishAllDishesFromUserCart(@RequestBody List<Dishes> dishes, HttpServletRequest request) {
         String emailId = (String) request.getAttribute("emailId");
         userService.deleteAllCartItem(emailId, dishes);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @PostMapping("/upadteUserAddress")
-    public ResponseEntity<?> upadteUserAddress(@RequestBody User user) {
+    @PutMapping("/upadteUserAddress")
+    public ResponseEntity<?> updateUserAddress(@RequestBody User user) {
         return new ResponseEntity<>(userService.updateAddress(user), HttpStatus.OK);
     }
 
-    @PostMapping("/updateQuantity")
+    @PutMapping("/updateQuantity")
     public ResponseEntity<?> updateQuantity(@RequestBody Dishes dishes, HttpServletRequest request) {
         String emailId = (String) request.getAttribute("emailId");
         return new ResponseEntity<>(userService.updateQuantity(dishes, emailId), HttpStatus.OK);

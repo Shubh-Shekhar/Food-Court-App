@@ -12,7 +12,7 @@ import java.util.Map;
 public class SecurityTokenGeneratorImpl implements SecurityTokenGenerator {
     @Override
     public Map<String, String> generateToken(User user) {
-        Map<String, String> result = new HashMap<String, String>();
+        Map<String, String> result = new HashMap<>();
 
         user.setPassword("");
 

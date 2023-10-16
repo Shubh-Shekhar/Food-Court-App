@@ -40,7 +40,7 @@ public class UserServiceImpl implements IUserService {
 
     public void sendMail(String receiver, String subject, String body) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        simpleMailMessage.setFrom("shubhamshekhar725@gmail.com");
+        simpleMailMessage.setFrom("chayaldinesh1@gmail.com");
         simpleMailMessage.setTo(receiver);
         simpleMailMessage.setText(body);
         simpleMailMessage.setSubject(subject);

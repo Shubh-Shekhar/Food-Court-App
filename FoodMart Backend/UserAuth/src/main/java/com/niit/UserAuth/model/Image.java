@@ -1,4 +1,4 @@
-package com.niit.UserAuth.domain;
+package com.niit.UserAuth.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

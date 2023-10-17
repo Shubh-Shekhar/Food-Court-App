@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface UserProxy {
 
     @PostMapping("/foodieApp/userService/addUser")
-    public ResponseEntity<?> sendDataToUserService(@RequestBody UserDto userDto);
+    ResponseEntity<?> sendDataToUserService(@RequestBody UserDto userDto);
 
 }

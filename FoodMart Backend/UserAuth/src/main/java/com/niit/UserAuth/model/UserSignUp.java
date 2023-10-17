@@ -10,7 +10,6 @@ import org.springframework.data.annotation.Id;
 @ToString
 public class UserSignUp {
 
-
     @Id
     private String email;
     private String firstName, lastName;

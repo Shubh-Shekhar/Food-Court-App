@@ -24,7 +24,6 @@ public interface IUserService {
      int sendOTP(String email);
 
 
-
     String uploadImage(String path, MultipartFile file) throws IOException;
 
     InputStream getImage(String path, String fileName) throws FileNotFoundException;

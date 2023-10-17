@@ -28,7 +28,7 @@ export class SignupComponent {
     'lastName':new FormControl('',[Validators.required,Validators.minLength(3)]),
     'email':new FormControl('',[Validators.required,Validators.pattern(this.emailpattern)]),
     'password':new FormControl('',[Validators.required,Validators.pattern('^[A-Za-z0-9._%+-]{8,}')]),
-     'mobileNo':new FormControl('',Validators.pattern(/^[789]\d{9,9}$/)),
+     'mobileNo':new FormControl('',Validators.pattern(/^[6789]\d{9,9}$/)),
      'buildingName':new FormControl('',Validators.required),
      'streetName':new FormControl('',Validators.required),
      'city':new FormControl('',Validators.required),
@@ -107,7 +107,6 @@ this.d.password=this.signupForm.value.password;
     imageFormData.append('image', this.uploadedImage, this.uploadedImage.name);
     this.dbImage=this.uploadedImage.name;
 
-    // this.service.propfilephoto="http://localhost:8082/images/"+this.dbImage;
     console.log(this.dbImage);
 
 

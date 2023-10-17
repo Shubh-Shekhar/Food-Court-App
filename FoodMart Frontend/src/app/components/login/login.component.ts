@@ -17,16 +17,13 @@ export class LoginComponent {
 
   constructor(private router: Router,private service:UserAuthService,private snackBar:MatSnackBar){}
 
-  
+
 horizontalPosition: MatSnackBarHorizontalPosition = 'center';
 verticalPosition: MatSnackBarVerticalPosition = 'top';
 
-  phonePattern = '^[7-9][0-9]{9}$';
-  passwordPattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}$";
-  // emailpattern='^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
-  
+
   emailpattern='^[a-z0-9._%+-]+@[a-z]+\.[a-z]{2,4}$'
-  
+
 
   loginForm= new FormGroup({
     email:new FormControl('',[Validators.required,Validators.pattern(this.emailpattern)]),
@@ -44,7 +41,7 @@ verticalPosition: MatSnackBarVerticalPosition = 'top';
   responseData:any;
   userLogIn()
   {
-   
+
     console.log(this.loginForm.value);
     this.service.userLogIn(this.loginForm.value).subscribe( data1=>{
       console.log(data1);
@@ -55,7 +52,7 @@ verticalPosition: MatSnackBarVerticalPosition = 'top';
         verticalPosition:this.verticalPosition,
       });
    localStorage.setItem("User_Token",this.responseData.token);
-     
+
       this.router.navigateByUrl('/userDashboard');
     },
     error=>{

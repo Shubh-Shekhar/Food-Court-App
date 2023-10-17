@@ -11,8 +11,6 @@
 <form [formGroup]="signupForm" class="form">
   <div class="container">
     <h3>New Registration</h3>
-
-
     <div style="display: flex;justify-content: space-evenly; width: 100%;">
       <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;">
         <input formControlName="firstName" id="firstName" matInput minlength="3" placeholder="First Name" type="text">
@@ -56,7 +54,6 @@
       <mat-error *ngIf="password?.errors?.['pattern']" style="color: red; width: 700px;">
         Password should have min 8 letter password.
       </mat-error>
-
     </mat-form-field>
 
     <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;">
@@ -92,7 +89,6 @@
     </div>
 
     <div style="display: flex;justify-content: space-evenly; width: 100%;">
-
       <mat-form-field appearance="fill" style="margin-left: 5px;margin-right: 5px; width: 100%;">
         <input formControlName="city" matInput placeholder="City"
                type="text">
@@ -131,12 +127,10 @@
         <mat-error *ngIf="pincode?.errors?.['required']" style="color: red;">
           Pincode is required.
         </mat-error>
-        
       </mat-form-field>
 
     </div>
     <input (change)="onImageUpload($event)" style=" margin-top: 5px;" type="file">
-
     <button (click)="sendSignupData()">Register</button>
   </div>
 </form>

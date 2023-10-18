@@ -1,4 +1,4 @@
-package com.niit.UserAuth.domain;
+package com.niit.UserAuth.model;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
@@ -9,7 +9,6 @@ import org.springframework.data.annotation.Id;
 @Setter
 @ToString
 public class UserSignUp {
-
 
     @Id
     private String email;

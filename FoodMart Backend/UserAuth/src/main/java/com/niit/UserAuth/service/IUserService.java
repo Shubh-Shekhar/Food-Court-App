@@ -1,7 +1,7 @@
 package com.niit.UserAuth.service;
 
-import com.niit.UserAuth.domain.User;
-import com.niit.UserAuth.domain.UserSignUp;
+import com.niit.UserAuth.model.User;
+import com.niit.UserAuth.model.UserSignUp;
 import com.niit.UserAuth.exception.InvalidCredentialsException;
 import com.niit.UserAuth.exception.UserAlreadyExistException;
 import org.springframework.web.multipart.MultipartFile;
@@ -22,7 +22,6 @@ public interface IUserService {
     int generateOTP();
 
      int sendOTP(String email);
-
 
 
     String uploadImage(String path, MultipartFile file) throws IOException;
